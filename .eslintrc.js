@@ -30,5 +30,6 @@ module.exports = {
     }],
     "no-extra-boolean-cast": 0,//禁止不必要的bool转换
     "require-yield": 0,//生成器函数必须有yield
+    "no-constant-condition": 0,//禁止在条件中使用常量表达式 if(true) if(1)
   }
 };
