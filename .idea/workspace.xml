@@ -2,79 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6907244-5541-4ebe-b965-ce120c5e3fb3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/wxq-cli.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/app.c1af831d6107ee27c28d.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/css/app.43d15.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/css/app.43d15.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/App.919d37658d28f78936ea.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/Default.bec3c0de94545c33c055.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/home.d4799efa107b07b72799.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/index.bc413d89a2dad45abb3a.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/page.ea2e444be007139d3db1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/page1.7932055848cd1c060bd6.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/js/page2.5b12b2f6c86ffd18574c.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/runtime.a41c6fe3f6d4618614b6.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/www/vendor.916f5f844d5d2bdb97fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/postcss.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Common/Utility.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/DefHref/DefHref.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/DefHref/scss/DefHref.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ListItem/ListItem.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ListItem/scss/ListItem.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Navbar/img/icon-arrow-left-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Navbar/scss/Navbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/counter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/home.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/userInfo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/middleware/clientMiddleware.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/middleware/promiseMiddleware.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/counter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/home.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/reduxCommon.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/userInfo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/saga/home.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/saga/sagas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/redux/store.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/router/Bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/router/router.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/router/router.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/service/ApiClient.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/service/axios.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/styles/Common.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/styles/index.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/App/App.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/App/scss/App.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/home/home.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/home/scss/Default.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/page1/page.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/page1/page1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/page1/page1.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/views/page2/page2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack/base.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack/dev.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack/prod.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack/proxy.js" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -155,8 +84,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+            <state relative-caret-position="15">
+              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -421,15 +350,16 @@
       <workItem from="1516442350067" duration="2192000" />
       <workItem from="1516448206923" duration="5198000" />
       <workItem from="1516590243871" duration="38266000" />
-      <workItem from="1516701553997" duration="1566000" />
+      <workItem from="1516701553997" duration="1730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50294000" />
+    <option name="totallyTimeSpent" value="50458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1804" y="-538" width="2004" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15935451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -438,7 +368,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34200743" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34200743" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -766,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
