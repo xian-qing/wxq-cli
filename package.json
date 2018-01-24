@@ -12,7 +12,7 @@
   },
   "betterScripts": {
     "start-dev": {
-      "command": "webpack-dev-server --config webpack/dev.config.js  --color  --hot",
+      "command": "webpack-dashboard -- webpack-dev-server --config webpack/dev.config.js  --color  --hot",
       "env": {
         "NODE_ENV": "development"
       }
@@ -69,6 +69,7 @@
     "eslint-plugin-redux-saga": "^0.5.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "oneport": "^1.0.2",
@@ -79,7 +80,9 @@
     "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
+    "webpack-dashboard": "^1.1.1",
     "webpack-dev-server": "^2.11.0",
+    "webpack-hot-middleware": "^2.21.0",
     "webpack-merge": "^4.1.1"
   }
 }
