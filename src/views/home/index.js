@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { DefHref } from 'components';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link} from 'react-router-dom'
-import './scss/Default.scss';
+import { Link,Switch,Route} from 'react-router-dom'
+import './home.scss';
 import {increment,decrement,increment_async,unmount,getToken} from '../../redux/actions/home'
-
 import { Layout, Menu, Breadcrumb } from 'antd';
 const { Header, Content, Footer } = Layout;
 
+import { asyncComponent } from '../../router/asyncCompont'
+const page1 = asyncComponent(() => import(/* webpackChunkName: "js/page1" */ "../page1/index.js"))
 @connect((state) => {
   return {
     home:state.home,
@@ -65,14 +66,17 @@ class Default extends Component {
           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
             <div>
               <div className={'text'}>
-                <Link to='page1'>page1</Link>
+                <Link to='/home/page1'>page1</Link>
+                <Link to='/page2'>page2</Link>
                 <button onClick={()=>{this.props.getToken()}}>获取TOKEN</button>
                 <button onClick={()=>{this.props.increment_async({a:1})}}>增加</button>
                 <button onClick={()=>{this.props.decrement()}}>减少</button>
                 {this.props.count}
                 {this.props.token}
               </div>
-
+              <Switch>
+                <Route exact path="/home/page1" component={page1} />
+              </Switch>
             </div>
           </div>
         </Content>

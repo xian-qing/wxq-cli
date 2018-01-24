@@ -9,7 +9,7 @@ const env = {
 
 module.exports = Object.assign({
     app: {
-        BaseName: '/www/',
+        BaseName: '/',
         BuildPath: '/dist/www'
     }
 }, env);

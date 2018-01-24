@@ -58,7 +58,7 @@ const Config = {
         }),
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', }),
-        new webpack.optimize.CommonsChunkPlugin({ name: 'runtime' }),  // runtime以及vendor的顺序关系很重要要。
+        new webpack.optimize.CommonsChunkPlugin({ name: 'runtime' ,minChunks: Infinity}),  // runtime以及vendor的顺序关系很重要要。
     ],
 }
 module.exports = Config;

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Utility, ApiInfo } from 'components';
 import * as CommonActions from 'reducers/reduxCommon';
-const comStyles = require('styles/Common.scss');
-const styles = require('./page.scss');
 import './page1.scss'
 @connect((state) => {
   console.log(state)
@@ -31,7 +29,7 @@ export default class Page1 extends Component {
     console.log('-----------------', new Date().getTime());
     const { UserList } = this.props;
     return (
-      <div>
+      <div className='page1'>
         page1
       </div>
 
