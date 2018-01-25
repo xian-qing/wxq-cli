@@ -6,11 +6,11 @@ export default class App extends Component {
   static propTypes = {
     children: PropTypes.any,                                // 子项
     location: PropTypes.object,
-    Title: PropTypes.string,
+    Title: PropTypes.string
   }
   static contextTypes = {
     router: PropTypes.object.isRequired,
-    history: PropTypes.object,
+    history: PropTypes.object
   }
 
   constructor(props) {

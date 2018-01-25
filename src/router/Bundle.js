@@ -6,7 +6,7 @@ class Bundle extends Component {
     load: PropTypes.any,
     isProduction: PropTypes.bool,
     children: PropTypes.any,
-    location: PropTypes.any,
+    location: PropTypes.any
   }
   constructor(props) {
     super(props);

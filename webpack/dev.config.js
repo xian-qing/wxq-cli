@@ -6,7 +6,6 @@ const AppCfg = require('./config');
 const proxyObj = require('./proxy')
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const DashboardPlugin = require('webpack-dashboard/plugin');
 const devConfig = {
   devtool: 'inline-source-map',
   entry: {
@@ -52,7 +51,6 @@ const devConfig = {
   plugins: [
     new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
     new FriendlyErrorsWebpackPlugin(),
-    new DashboardPlugin()
   ],
   devServer: {
     port: 8080,

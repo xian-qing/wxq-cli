@@ -5,18 +5,18 @@ import { Utility, ApiInfo } from 'components';
 import * as CommonActions from 'reducers/reduxCommon';
 import './page1.scss'
 @connect((state) => {
-  console.log(state)
   return ({
-  UserList: state.Common.UserList,
-  Demo: state.Common.Demo,
-  MapPlacelist: state.Common.MapPlacelist,
-})}, { ...CommonActions })
+    UserList: state.Common.UserList,
+    Demo: state.Common.Demo,
+    MapPlacelist: state.Common.MapPlacelist
+  })
+}, { ...CommonActions })
 export default class Page1 extends Component {
   static propTypes = {
     UserList: PropTypes.any,
     Demo: PropTypes.any,
     MapPlacelist: PropTypes.any,
-    onApiGet: PropTypes.func,
+    onApiGet: PropTypes.func
   }
 
   constructor(props) {
@@ -26,10 +26,9 @@ export default class Page1 extends Component {
   }
 
   render() {
-    console.log('-----------------', new Date().getTime());
     const { UserList } = this.props;
     return (
-      <div className='page1'>
+      <div className="page1">
         page1
       </div>
 

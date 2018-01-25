@@ -13,15 +13,15 @@ import { Router } from 'react-router';
 
 function renderWithHotReload(RootElement) {
   ReactDOM.render(
-  <AppContainer warnings={false}>
-    <Provider store={ApiClientStore} key="provider">
-    <Router history={history}>
-        {RootElement}
-      </Router>
-    </Provider>
-  </AppContainer>,
-  document.getElementById('app')
-);
+    <AppContainer warnings={false}>
+      <Provider store={ApiClientStore} key="provider">
+        <Router history={history}>
+          {RootElement}
+        </Router>
+      </Provider>
+    </AppContainer>,
+    document.getElementById('app')
+  );
 }
 
 /**

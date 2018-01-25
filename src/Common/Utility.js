@@ -29,7 +29,7 @@ export default class Utility {
      */
     Context: 'XTNContext',                                             // 当前页面的Context
     ReduxKey: {
-      ManualInputModify: 'ManualInputModify',
+      ManualInputModify: 'ManualInputModify'
     },
     /**
      * 事件
@@ -53,7 +53,7 @@ export default class Utility {
         500: 'onHttpStatus_XTN_500',                   // 服务器错误
         501: 'onHttpStatus_XTN_501',
         502: 'onHttpStatus_XTN_502',
-        503: 'onHttpStatus_XTN_503',
+        503: 'onHttpStatus_XTN_503'
       },
       ShowModel: {
         OnActionSheet: 'onXTN_ShowModel_ActionSheet',                            //
@@ -65,7 +65,7 @@ export default class Utility {
         OnShowDialogClose: 'onXTN_ShowModel_ShowDialogClose',                    // 关闭对话框
         OnActionSheetHide: 'onXTN_ShowModel_ActionSheetHide',                    // 关闭
         OnLoadingHide: 'onXTN_ShowModel_LoadingHide',
-        OnConfirmHide: 'onXTN_ShowModel_ConfirmHide',
+        OnConfirmHide: 'onXTN_ShowModel_ConfirmHide'
       },
       OnGoBack: 'onXTNEvent_GoBack',                                             // 页面退回事件
       OnEditNavBarTitle: 'onXTNEvent_EditNavBarTitle',                           // 修改导航条标题
@@ -73,7 +73,7 @@ export default class Utility {
       OnEditPageSliderInfo: 'onXTNEvent_EditPageSliderInfo',                     // 页面切换
       OnOpenDatePicker: 'onXTNEvent_OnOpenDatePicker',                           // 打开日期控件
       OnKeyboard: 'onXTNEvent_Keyboard',                                         // 获取焦点键盘弹起;失去焦点键盘消失
-      OnSetTitle: 'onXTNEvent_OnSetTitle',                                       // 修改导航条的标题
+      OnSetTitle: 'onXTNEvent_OnSetTitle'                                       // 修改导航条的标题
     },
     /**
      * url 列表
@@ -87,14 +87,14 @@ export default class Utility {
       Page4: 'page4',                                                  // 首页-->商品列表
       Counter: 'counter',                                                  // 首页-->商品列表
       UserInfo: 'userinfo',                                                  // 首页-->商品列表
-      Es6: 'es6',                                                  // 首页-->商品列表
+      Es6: 'es6'                                                  // 首页-->商品列表
     },
     UrlTitle: {
       '/': { Title: '默认页面', Index: 0 },
       '/page1': { Title: 'page1', Index: 0 },
       '/page2': { Title: 'page2', Index: 0 },
       '/page3': { Title: 'page3', Index: 0 },
-      '/page4': { Title: 'page4', Index: 0 },
+      '/page4': { Title: 'page4', Index: 0 }
       //'/counter': { Title: '计数', Index: 0 },
       //'/userinfo': { Title: '用户信息', Index: 0 },
       //'/es6': { Title: 'Es6', Index: 0 },
@@ -106,7 +106,7 @@ export default class Utility {
       ActionSheet: 'XTNShowModelActionSheet',                      //
       Loading: 'XTNShowModelLoading',                              // 加载
       Alert: 'XTNShowModelAlert',                                  // 弹出信息
-      Confirm: 'XTNShowModelConfirm',                              // 确定--取消
+      Confirm: 'XTNShowModelConfirm'                              // 确定--取消
     },
     KeyHistory: 'XTN_KEY_HISTORY',
     KeyGoBack: 'XTN_KEY_GOBACK'
@@ -258,13 +258,13 @@ export default class Utility {
       /(y+)/.exec(_fmt);
       // const aa = /(y+)/.test(_fmt);
       // if (aa) {
-      const fmt1 = _fmt.replace(RegExp.$1, (__this.getFullYear() + '').substr(4 - RegExp.$1.length));
+      const fmt1 = _fmt.replace(RegExp.$1, (`${__this.getFullYear()}`).substr(4 - RegExp.$1.length));
       _fmt = fmt1;
       // }
     }
     for (const kk in oo) {
-      if (new RegExp('(' + kk + ')').test(fmt)) {
-        _fmt = _fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (oo[kk]) : (('00' + oo[kk]).substr(('' + oo[kk]).length)));
+      if (new RegExp(`(${kk})`).test(fmt)) {
+        _fmt = _fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (oo[kk]) : ((`00${oo[kk]}`).substr((`${oo[kk]}`).length)));
       }
     }
     return _fmt;
@@ -287,7 +287,7 @@ export default class Utility {
       }
 
       const _curDate = new Date();
-      const _aa = _curDate.toLocaleDateString() + ' ' + _curDate.toLocaleTimeString() + '.' + _curDate.getMilliseconds();
+      const _aa = `${_curDate.toLocaleDateString()} ${_curDate.toLocaleTimeString()}.${_curDate.getMilliseconds()}`;
       console.log('--begin->', _aa, ' call method :', __callmethod);
       const __content = JSON.stringify(args);
       console.log(__content);
@@ -540,7 +540,7 @@ export default class Utility {
         }
         switch (value.constructor.name) {
           case 'Object':
-            __JValue = '{' + this.convertToUrlParams(value) + '}';
+            __JValue = `{${this.convertToUrlParams(value)}}`;
             break;
           case 'Array':
             __JValue = JSON.stringify(value);
@@ -561,10 +561,10 @@ export default class Utility {
           // const __JsonValue = (self.isArray(__value) ? JSON.stringify(__value) : __value);
           if (notFields) {
             if (notFields.indexOf(key) === -1) {
-              __KeyValue.push(key + '=' + __JSONValue(__value));
+              __KeyValue.push(`${key}=${__JSONValue(__value)}`);
             }
           } else {
-            __KeyValue.push(key + '=' + __JSONValue(__value));
+            __KeyValue.push(`${key}=${__JSONValue(__value)}`);
           }
         }
       }
@@ -639,7 +639,7 @@ export default class Utility {
         __history.goBack();
         return;
       }
-      const __pathname = '/' + url;
+      const __pathname = `/${url}`;
       __history.push(__pathname, Object.assign(params || {}, { _timestamp: new Date().getTime() }));
     } catch (ex) {
       console.log(ex.toString());

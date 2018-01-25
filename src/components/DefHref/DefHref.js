@@ -6,7 +6,7 @@ const styles = require('./scss/DefHref.scss');
 
 export default class DefHref extends Component {
   static propTypes = {
-    Title: PropTypes.string,
+    Title: PropTypes.string
   }
 
   constructor(props) {

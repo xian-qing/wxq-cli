@@ -1,10 +1,11 @@
-import React from 'react'
-export const asyncComponent = loadComponent => (
+import React from 'react';
+
+export const asyncComponent = (loadComponent) => (
   class AsyncComponent extends React.Component {
     state = {
       Component: null,
-      loading:<div>loading</div>
-    }
+      loading: <div>loading</div>
+    };
 
     componentWillMount() {
       if (this.hasLoadedComponent()) {
@@ -12,9 +13,9 @@ export const asyncComponent = loadComponent => (
       }
 
       loadComponent()
-        .then(module => module.default)
+        .then((module) => module.default)
         .then((Component) => {
-          this.setState({ Component });
+          this.setState({Component});
         })
         .catch((err) => {
           console.error(`Cannot load component in <AsyncComponent />`);
@@ -27,8 +28,8 @@ export const asyncComponent = loadComponent => (
     }
 
     render() {
-      const { Component,loading } = this.state;
-      return (Component) ? <Component {...this.props} /> :loading  ;
+      const {Component, loading} = this.state;
+      return (Component) ? <Component {...this.props} /> : loading;
     }
   }
 );

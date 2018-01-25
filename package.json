@@ -8,11 +8,12 @@
     "start-prod": "better-npm-run start-prod",
     "build": "better-npm-run start-prod",
     "start-dev": "better-npm-run start-dev",
-    "dev": "concurrently --kill-others \"npm run start-dev\""
+    "dev": "concurrently --kill-others \"npm run start-dev\"",
+    "eslint": "eslint --fix  ./src/"
   },
   "betterScripts": {
     "start-dev": {
-      "command": "webpack-dashboard -- webpack-dev-server --config webpack/dev.config.js  --color  --hot",
+      "command": "webpack-dev-server --config webpack/dev.config.js  --color  --hot",
       "env": {
         "NODE_ENV": "development"
       }
@@ -63,8 +64,10 @@
     "concurrently": "^3.5.1",
     "css-loader": "^0.28.9",
     "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-redux-saga": "^0.5.0",
     "extract-text-webpack-plugin": "^3.0.2",

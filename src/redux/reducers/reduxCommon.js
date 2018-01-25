@@ -1,33 +1,33 @@
 // import Utility from '../../Common/Utility';
 const __Base = 'XIAOTUNI/REDUX/Common/';
-const Load = __Base + 'Load';
-const LoadSuccess = __Base + 'LoadSuccess';
-const LoadFail = __Base + 'LoadFail';
+const Load = `${__Base}Load`;
+const LoadSuccess = `${__Base}LoadSuccess`;
+const LoadFail = `${__Base}LoadFail`;
 
-const _BaseNBEditTitle = __Base + 'NavBar/';
-const NbTitleEdit = _BaseNBEditTitle + 'Title_Edit';
-const NbTitleInfo = _BaseNBEditTitle + 'Title_Info';
+const _BaseNBEditTitle = `${__Base}NavBar/`;
+const NbTitleEdit = `${_BaseNBEditTitle}Title_Edit`;
+const NbTitleInfo = `${_BaseNBEditTitle}Title_Info`;
 
-const __UpdateTime = __Base + '/__UpdateTime';
-const __DeleteStateByFields = __Base + '/DeleteStateByFields';
+const __UpdateTime = `${__Base}/__UpdateTime`;
+const __DeleteStateByFields = `${__Base}/DeleteStateByFields`;
 // 清空信息
-const ClearContentSuccess = __Base + '/ClearContentSuccess';
+const ClearContentSuccess = `${__Base}/ClearContentSuccess`;
 
 /**
  * 设置变量操作
  * @type {string}
  */
-const OnSetContent = __Base + 'OnSetContent';
-const UrlParamsEdit = __Base + 'UrlParamsEdit';
+const OnSetContent = `${__Base}OnSetContent`;
+const UrlParamsEdit = `${__Base}UrlParamsEdit`;
 
-const __API = __Base + 'API/';
-const __POST = __API + '/POST';               // POST方法处理
-const __PUT = __API + '/PUT';                 // PUT方法处理
-const __DELETE = __API + '/DELETE';           // DELETE方法处理
-const __GET = __API + '/GET';                 // GET方法处理
+const __API = `${__Base}API/`;
+const __POST = `${__API}/POST`;               // POST方法处理
+const __PUT = `${__API}/PUT`;                 // PUT方法处理
+const __DELETE = `${__API}/DELETE`;           // DELETE方法处理
+const __GET = `${__API}/GET`;                 // GET方法处理
 
 let __TEMP_SERVICES_SYSTEM_TIEM;
-const initialState = { loaded: false, __Times: 0, };
+const initialState = { loaded: false, __Times: 0 };
 
 
 export default function reducer(state = initialState, action = {}) {

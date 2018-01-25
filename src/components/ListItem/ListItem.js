@@ -7,7 +7,7 @@ const styles = require('./scss/ListItem.scss');
 export default class ListItem extends Component {
   static propTypes = {
     DataSource: PropTypes.array,
-    onDelete: PropTypes.func,
+    onDelete: PropTypes.func
   }
 
   constructor(props) {
@@ -76,7 +76,7 @@ export default class ListItem extends Component {
       return (<div key={index} className={styles.row} onClick={this.onClickSelectItem.bind(this, item, index)}>
         <div className={styles.index}>{item.id}</div>
         <div className={styles.name}>{item.Name}</div>
-        <div className={styles.date}>{CurrentDate.toLocaleDateString() + ' ' + CurrentDate.toLocaleTimeString()}</div>
+        <div className={styles.date}>{`${CurrentDate.toLocaleDateString()} ${CurrentDate.toLocaleTimeString()}`}</div>
       </div>);
     });
   }

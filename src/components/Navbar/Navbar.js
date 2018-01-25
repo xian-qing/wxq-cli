@@ -6,7 +6,7 @@ const styles = require('./scss/Navbar.scss');
 
 export default class Navbar extends Component {
   static propTypes = {
-    Title: PropTypes.string,
+    Title: PropTypes.string
   }
 
   constructor(props) {

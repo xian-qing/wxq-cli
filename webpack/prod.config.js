@@ -49,7 +49,14 @@ const proCfg = {
   plugins: [
     // new CleanWebpackPlugin([path.join(APP_PATH, AppCfg.app.BuildPath)]),
     new CleanWebpackPlugin([path.join(APP_PATH, AppCfg.app.BuildPath)], { root: APP_PATH }),
-    new UglifyJSPlugin(),
+    new UglifyJSPlugin({
+      uglifyOptions:{
+        compress:{
+          warnings: false,
+          drop_console:true,// 删除console
+        }
+      }
+    }),
     new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
     new ExtractTextPlugin({ filename: 'css/[name].[chunkhash:8].css', allChunks: true }),
   ],
