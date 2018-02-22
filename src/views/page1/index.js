@@ -29,7 +29,7 @@ export default class Page1 extends Component {
     const { UserList } = this.props;
     return (
       <div className="page1">
-        page1
+        page112
       </div>
 
     );

@@ -49,7 +49,7 @@ class Default extends Component {
   }
 
   componentWillMount() {
-    this.props.getToken();
+    //this.props.getToken();
     //console.log(this.props);
     //console.log(this.context.router);
   }
@@ -79,7 +79,7 @@ class Default extends Component {
           <Breadcrumb style={{margin: '16px 0'}}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
+            <Breadcrumb.Item>App111</Breadcrumb.Item>
           </Breadcrumb>
           <div style={{background: '#fff', padding: 24, minHeight: 280}}>
             <div>
@@ -92,7 +92,7 @@ class Default extends Component {
                 </button>
                 <button onClick={() => {
                   this.props.increment_async({a: 1});
-                }}>增加
+                }}>增加123
                 </button>
                 <button onClick={() => {
                   this.props.decrement();

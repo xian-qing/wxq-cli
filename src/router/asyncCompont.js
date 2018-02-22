@@ -8,6 +8,7 @@ export const asyncComponent = (loadComponent) => (
     };
 
     componentWillMount() {
+      console.log(123123)
       if (this.hasLoadedComponent()) {
         return;
       }
@@ -16,6 +17,19 @@ export const asyncComponent = (loadComponent) => (
         .then((module) => module.default)
         .then((Component) => {
           this.setState({Component});
+        })
+        .catch((err) => {
+          console.error(`Cannot load component in <AsyncComponent />`);
+          throw err;
+        });
+    }
+    componentWillReceiveProps(nextProps) {
+      loadComponent()
+        .then((module) => module.default)
+        .then((Component) => {
+          if (this.state.Component !== Component) {
+            this.setState({Component});
+          }
         })
         .catch((err) => {
           console.error(`Cannot load component in <AsyncComponent />`);

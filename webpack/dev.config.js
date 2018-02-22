@@ -49,12 +49,13 @@ const devConfig = {
     ]
   },
   plugins: [
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    //new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
     new FriendlyErrorsWebpackPlugin(),
   ],
   devServer: {
     port: 8080,
     proxy: proxyObj,
+    clientLogLevel: "none",  //不显示log
     // contentBase: path.join(__dirname, '..', './react'),
     historyApiFallback: { index: AppCfg.app.BaseName }, // 解决进行非默认页面，刷新报404问题。
     host: '0.0.0.0'

@@ -34,7 +34,7 @@ renderWithHotReload(getRouter());
  */
 if (module.hot) {
   module.hot.accept('./router/router', () => {
-    const getRouter1 = require('./router/router').default;
-    renderWithHotReload(getRouter1());
+    const hotRouter = require('./router/router').default;
+    renderWithHotReload(hotRouter());
   });
 }
