@@ -60,7 +60,10 @@ const devConfig = {
     noInfo: true,
     // contentBase: path.join(__dirname, '..', './react'),
     historyApiFallback: { index: AppCfg.app.BaseName }, // 解决进行非默认页面，刷新报404问题。
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    after(app){
+      console.log(`\n\nopen: http://localhost:8080/\n\n`)
+    }
   },
 };
 
